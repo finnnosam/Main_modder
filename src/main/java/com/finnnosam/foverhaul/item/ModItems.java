@@ -1,6 +1,6 @@
-package com.finnnosam.finnnosamoverhaul.item;
+package com.finnnosam.foverhaul.item;
 
-import com.finnnosam.finnnosamoverhaul.fOverhaul;
+import com.finnnosam.foverhaul.foverhaul;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,9 +9,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, fOverhaul.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, foverhaul.MOD_ID);
 
-public static final RegistryObject<Item> TESTERINGS = ITEMS.register("testerings",
+    public static final RegistryObject<Item> TESTERINGS = ITEMS.register("testerings",
         () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
